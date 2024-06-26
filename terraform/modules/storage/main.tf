@@ -113,6 +113,7 @@ resource "aws_ssm_parameter" "example_ssm_db_host" {
     git_repo             = "codegoat"
     yor_trace            = "4fbfdb10-f5bf-424b-af46-ab69cbb0df3c"
   })
+  key_id = "CKV_ANY"
 }
 
 resource "aws_ssm_parameter" "example_ssm_db_password" {
@@ -149,6 +150,7 @@ resource "aws_ssm_parameter" "example_ssm_db_user" {
     git_repo             = "codegoat"
     yor_trace            = "218214f1-78c9-49f0-bef6-b65b3da80461"
   })
+  key_id = "CKV_ANY"
 }
 resource "aws_ssm_parameter" "example_ssm_db_name" {
   name        = "/example-${var.environment}/DB_NAME"
